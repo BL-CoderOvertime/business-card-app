@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BusinessCardApp.iml" filepath="$PROJECT_DIR$/BusinessCardApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessCardApp.iml" filepath="$PROJECT_DIR$/BusinessCardApp.iml" group="BusinessCardApp" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="BusinessCardApp/app" />
     </modules>
   </component>
 </project>
