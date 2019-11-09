@@ -1,10 +1,11 @@
 package com.example.businesscardapp.models
 
-class User(
-    var contactList: MutableList<CardHolder>? = null,
-    var userCardHolder: CardHolder
-) {}
+import java.util.*
 
+class User(
+    var connectionList: MutableList<Connection>? = null,
+    var userCardHolder: CardHolder
+)
 class CardHolder(
     var name: String = "",
     var businessName: String = "",
@@ -14,4 +15,6 @@ class CardHolder(
     var emailAddress: String = "",
     var businessTitle: String = "",
     var businessLogoUrl: String = ""
-) {}
+)
+
+class Connection(var contact: CardHolder, var date: String = "", var event: String = "")
