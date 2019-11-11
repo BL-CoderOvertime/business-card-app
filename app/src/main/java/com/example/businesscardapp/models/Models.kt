@@ -1,12 +1,15 @@
 package com.example.businesscardapp.models
 
+import androidx.room.*
 import java.util.*
 
-class User(
-    var connectionList: MutableList<Connection>? = null,
-    var userCardHolder: CardHolder
-)
-class CardHolder(
+object User {
+    var connectionList: MutableList<Connection>? = null
+    lateinit var userContact: Contact
+}
+
+@Entity(tableName = "contact_table")
+class Contact(
     var name: String = "",
     var businessName: String = "",
     var businessPhone: String = "",
@@ -14,7 +17,18 @@ class CardHolder(
     var address: String = "",
     var emailAddress: String = "",
     var businessTitle: String = "",
-    var businessLogoUrl: String = ""
+    var businessLogoUrl: String = "",
+
+    @PrimaryKey()
+    var id: Long = 0
 )
 
-class Connection(var contact: CardHolder, var date: String = "", var event: String = "")
+@Entity(tableName = "connection_table")
+class Connection(
+    var contact: Contact,
+    var date: String = "",
+    var event: String = "",
+
+    @PrimaryKey()
+    var id: Long = 0
+)
