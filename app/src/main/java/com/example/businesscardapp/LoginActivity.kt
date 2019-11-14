@@ -1,6 +1,5 @@
 package com.example.businesscardapp
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,8 +12,8 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var gso: GoogleSignInOptions
-    lateinit var googleClient: GoogleSignInClient
+    private lateinit var gso: GoogleSignInOptions
+    private lateinit var googleClient: GoogleSignInClient
     private var  account: GoogleSignInAccount? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.wkdrabbit.vacationtimeline.viewModels
+package com.example.businesscardapp.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

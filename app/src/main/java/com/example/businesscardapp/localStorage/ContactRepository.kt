@@ -20,8 +20,8 @@ class ContactRepository(application: Application) {
 
         if (isOnline) {
 
-            //TODO: get Data from RoamlyDao if valid,
-            // delete local data, set local data equal to data from RoamlyDao
+            //TODO: get Data from API if valid,
+            // delete local data, set local data equal to data from API
         }
 
         contactDao = database.contactDao()
