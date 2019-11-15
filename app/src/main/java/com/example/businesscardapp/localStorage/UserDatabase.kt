@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.businesscardapp.models.Contact
 
-@Database(entities = [Contact::class], exportSchema = true, version = 3)
+@Database(entities = [Contact::class], exportSchema = true, version = 4)
 abstract class UserDatabase : RoomDatabase() {
 
     abstract fun contactDao(): ContactDao
